@@ -1,1 +1,30 @@
-@import '~/node_modules/bootstrap/scss/bootstrap.scss';
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/* Montserrat Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins",
+        Helvetica,
+        Arial,
+        sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    /* width: 1560px; */
+    width: 70%;
+    margin: auto;
+}
+
+.d_flex {
+    display: flex;
+    align-items: center;
+}
