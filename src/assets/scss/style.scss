@@ -28,3 +28,22 @@ body {
     display: flex;
     align-items: center;
 }
+
+.btn_green,
+.btn_green_outline {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn_green {
+    background-color: #058283;
+    color: #fff;
+}
+
+.btn_green_outline {
+    border: 1px solid #058283;
+    color: #058283;
+}
