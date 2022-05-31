@@ -88,7 +88,6 @@ export default {};
 
 header {
   background-image: url(../assets/img/bg-6.jpg);
-  background-size: cover;
 
   .top_header {
     background-color: $nexgen_dark_blue;
