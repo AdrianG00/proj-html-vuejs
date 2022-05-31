@@ -1,32 +1,27 @@
 <template>
   <div id="app">
-    
-    <SiteHeader/>
-
-    <SiteMain/>
-
-    <SiteFooter/>
-
+    <SiteHeader />
+    <SiteMain />
+    <SiteFooter />
   </div>
 </template>
 
 <script>
-import SiteHeader from './components/HeaderComponent.vue'
-import SiteMain from './components/MainComponent.vue'
-import SiteFooter from './components/FooterComponent.vue'
+import SiteHeader from "./components/SiteHeader.vue";
+import SiteMain from "./components/SiteMain.vue";
+import SiteFooter from "./components/SiteFooter.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    SiteHeader,
     SiteMain,
-    SiteFooter
-  }
-}
+    SiteHeader,
+    SiteFooter,
+  },
+};
 </script>
 
 <style lang="scss">
-
-  @import '@/assets/scss/style.scss';
-
+@import "./assets/scss/variables.scss";
+@import "./assets/scss/common.scss";
 </style>
