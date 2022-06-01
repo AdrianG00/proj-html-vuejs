@@ -11,11 +11,12 @@
         </p>
         <div class="btn_green">See all</div>
       </div>
+
       <div class="cards">
         <div class="d_flex">
           <div class="card col_3">
             <div class="card_header d_flex">
-              <font-awesome-icon :icon="['far', 'edit']" class="icon" />
+              <img src="../assets/img/audit.png" />
               <font-awesome-icon
                 :icon="['fas', 'arrow-right']"
                 class="icon arrow_right"
@@ -25,9 +26,10 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <!-- /.card -->
+
           <div class="card col_3">
             <div class="card_header d_flex">
-              <font-awesome-icon :icon="['far', 'edit']" class="icon" />
+              <img src="../assets/img/financial.png" />
               <font-awesome-icon
                 :icon="['fas', 'arrow-right']"
                 class="icon arrow_right"
@@ -37,9 +39,10 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <!-- /.card -->
+
           <div class="card col_3">
             <div class="card_header d_flex">
-              <font-awesome-icon :icon="['far', 'edit']" class="icon" />
+              <img src="../assets/img/analytics.png" />
               <font-awesome-icon
                 :icon="['fas', 'arrow-right']"
                 class="icon arrow_right"
@@ -54,7 +57,7 @@
         <div class="d_flex">
           <div class="card col_3">
             <div class="card_header d_flex">
-              <font-awesome-icon :icon="['far', 'edit']" class="icon" />
+              <img src="../assets/img/middle.png" />
               <font-awesome-icon
                 :icon="['fas', 'arrow-right']"
                 class="icon arrow_right"
@@ -64,9 +67,10 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <!-- /.card -->
+
           <div class="card col_3">
             <div class="card_header d_flex">
-              <font-awesome-icon :icon="['far', 'edit']" class="icon" />
+              <img src="../assets/img/legal.png" />
               <font-awesome-icon
                 :icon="['fas', 'arrow-right']"
                 class="icon arrow_right"
@@ -76,9 +80,10 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           <!-- /.card -->
+
           <div class="card col_3">
             <div class="card_header d_flex">
-              <font-awesome-icon :icon="['far', 'edit']" class="icon" />
+              <img src="../assets/img/risk.png" />
               <font-awesome-icon
                 :icon="['fas', 'arrow-right']"
                 class="icon arrow_right"
@@ -104,19 +109,19 @@ export default {};
 @import "../assets/scss/variables.scss";
 
 .services {
-  background-color: #eef4ed;
+  background-color: $nexgen_light_green;
   padding: 120px 0;
-  color: #7e878c;
+  color: $nexgen_grey;
   font-weight: 300;
 
   .container {
     h3 {
-      color: $nexgen_text_dark;
+      color: $nexgen_primary_blue;
     }
 
     .title_bg {
       color: $nexgen_primary_green;
-      background-color: #cce3de;
+      background-color: rgba($nexgen_primary_green, 0.15);
     }
 
     .d_flex > p {
@@ -132,22 +137,33 @@ export default {};
       }
 
       .card {
-        background-color: white;
+        transition: 0.3s linear;
+        background-color: $nexgen_white;
         border-radius: 10px;
         padding: 3rem;
 
+        &:hover {
+          transform: translateY(-7.5px);
+        }
         .icon {
           color: $nexgen_primary_green;
 
           &.arrow_right {
+            transition: 0.3s linear;
             font-size: 1.5rem;
-            color: #82c1c1;
+            color: rgba($nexgen_primary_green, 0.5);
+            cursor: pointer;
+          }
+
+          &.arrow_right:hover {
+            font-size: 2rem;
+            color: $nexgen_primary_green;
           }
         }
 
         h5 {
-          color: $nexgen_dark_blue;
-          margin: 1rem 0;
+          color: $nexgen_primary_blue;
+          margin: 1.3rem 0;
         }
       }
     }
