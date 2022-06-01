@@ -3,7 +3,7 @@
     <div class="company">
       <div class="container d_flex">
         <div class="col">
-          <p class="title">about the network</p>
+          <p class="section_title">about the network</p>
           <h3><span class="title_bg">The</span> Company</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cras
@@ -63,10 +63,29 @@
     <Team />
     <!-- /.team -->
 
-    <div class="news"></div>
+    <News />
     <!-- /.news -->
 
-    <div class="newsletter"></div>
+    <div class="newsletter">
+      <div class="d_flex">
+        <div class="know col">
+          <div class="section_title">Newsletter</div>
+          <h3><span class="title_bg">Know</span> First</h3>
+          <p>
+            Follow closely and receive content about our company and the news of
+            the current market.
+          </p>
+        </div>
+        <!-- /.know -->
+
+        <div class="form col">
+          <input type="text" placeholder="Name" class="input" />
+          <input type="text" placeholder="Email" class="input" />
+          <div class="btn_green">subscribe</div>
+        </div>
+        <!-- /.form -->
+      </div>
+    </div>
     <!-- /.newsletter -->
   </main>
   <!-- /#site_main -->
@@ -76,12 +95,14 @@
 import Services from "./Services.vue";
 import Management from "./Management.vue";
 import Team from "./Team.vue";
+import News from "./News.vue";
 
 export default {
   components: {
     Services,
     Management,
     Team,
+    News,
   },
 };
 </script>
@@ -120,6 +141,47 @@ main {
 
       h4 {
         color: white;
+      }
+    }
+  }
+
+  .newsletter {
+    background-image: url("../assets/img/bg-1.jpg");
+    background-position-y: center;
+    object-position: center;
+    padding: 120px 0;
+    color: #ccc;
+    font-weight: 300;
+
+    & > .d_flex {
+      width: 50%;
+      margin: auto;
+      gap: 2rem;
+    }
+
+    .know {
+      h3 {
+        color: white;
+
+        .title_bg {
+          background-color: #173338;
+        }
+      }
+    }
+
+    .form {
+      .input {
+        display: block;
+        width: -webkit-fill-available;
+        background-color: rgba($color: #fff, $alpha: 0.55);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        box-shadow: none;
+        outline: none;
+        color: $nexgen_bg_dark;
+        font-size: 1rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
       }
     }
   }
